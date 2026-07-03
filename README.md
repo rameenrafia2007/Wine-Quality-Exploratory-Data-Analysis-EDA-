@@ -1,10 +1,11 @@
 # Wine-Quality-Exploratory-Data-Analysis-EDA
 
- Overview
 
-This project performs a comprehensive Exploratory Data Analysis (EDA) on the WineQT.csv dataset to uncover how physicochemical properties — alcohol content, acidity, pH, and sulphates — influence the quality rating of wine.
+ ## Overview
 
-🎯 Objectives
+This project performs a comprehensive Exploratory Data Analysis (EDA) on the WineQT.csv dataset to uncover how physicochemical properties : alcohol content, acidity, pH, and sulphates  influence the quality rating of wine.
+
+# 🎯 Objectives
 
 
 Clean and audit the dataset for missing values, redundant columns, and inconsistent formatting
@@ -14,7 +15,7 @@ Build a correlation matrix to identify the strongest statistical drivers of wine
 Extract actionable insights that could inform future predictive modeling
 
 
-🛠️ Tools & Libraries
+# 🛠️ Tools & Libraries
 
 
 Python
@@ -24,7 +25,7 @@ Matplotlib – data visualization
 Seaborn – statistical plotting
 
 
-🔍 Analytical Workflow
+# 🔍 Analytical Workflow
 
 
 Data Loading – Imported the WineQT.csv dataset into a Pandas DataFrame and verified its dimensions
@@ -36,19 +37,19 @@ Bivariate Analysis – Compared alcohol and volatile_acidity across quality tier
 Correlation Matrix – Generated a full Pearson correlation heatmap across all features
 
 
-📊 Key Insights
+# 📊 Key Insights
 
 FindingCorrelation with QualityAlcohol content is the dominant quality driver — premium wines (rated 7–8) average above 11.5% alcohol+0.48Volatile acidity is the primary quality inhibitor — high-quality wines stay below 0.40 g/dm³-0.41Sulphates play a preservation role — levels rise steadily with quality due to antimicrobial/antioxidant effects+0.26Fixed acidity vs. density shows a strong structural relationship affecting body and mouthfeel+0.68
 
 Additional observation: The target variable (quality) is heavily imbalanced — most samples cluster around scores 5–6, while extreme scores (3 and 8) are rare. This class imbalance would need to be addressed before training any future predictive ML model on this data.
 
-📁 Repository Structure
+# 📁 Repository Structure
 
 ├── WineQuality_EDA_Rafia_Rameen.ipynb   # Main analysis notebook
 ├── correlation_matrix_heatmap.png        # Exported correlation heatmap
 └── README.md
 
-🚀 How to Run
+# 🚀 How to Run
 
 
 Clone this repository
@@ -57,7 +58,7 @@ Ensure WineQT.csv is placed in the same directory (or update the file path)
 Run all cells sequentially
 
 
-📌 Dataset Source
+# 📌 Dataset Source
 
 Wine Quality Dataset (WineQT) — commonly sourced from Kaggle's Wine Quality dataset collection.
 
